@@ -331,6 +331,7 @@ ul, ol {
 }
 
 /* ============================================== */
+/* ============================================== */
 /* STICKY HEADER / NAVIGATION */
 /* ============================================== */
 .sticky-header {
@@ -350,13 +351,18 @@ ul, ol {
     box-shadow: var(--shadow-md);
 }
 
+/* YAHAN CHANGES KIYE HAIN 👇 */
 .sticky-header .navbar {
-    padding: 15px 0;
+    display: flex;                /* Elements ko ek line mein laane ke liye */
+    align-items: center;          /* Upar-niche se center karne ke liye */
+    justify-content: space-between; /* Logo left aur Menu right mein karne ke liye */
+    padding: 15px 20px;           /* Thoda side padding bhi diya taaki chipke na */
     transition: var(--transition-normal);
+    width: 100%;                  /* Ensure karega ki width full le */
 }
 
 .sticky-header.scrolled .navbar {
-    padding: 10px 0;
+    padding: 10px 20px;           /* Scroll hone par padding kam ho jayegi */
 }
 
 /* Logo */
@@ -382,6 +388,8 @@ ul, ol {
 .brand-highlight {
     color: var(--primary-blue);
 }
+
+/* Nav Links */
 
 /* Nav Links */
 .navbar-nav {
