@@ -3769,3 +3769,29 @@ textarea:focus {
     display: flex !important;
     align-items: center !important;
 }
+/* ============================================== */
+/* HEADER FIX */
+/* ============================================== */
+
+/* 1. Asli Parent (Container) ko Flex banao */
+.sticky-header .navbar .container {
+    display: flex !important;        /* Sabko ek line mein laata hai */
+    flex-direction: row !important;  /* Horizontal direction set karta hai */
+    justify-content: space-between !important; /* Logo Left, Menu Right */
+    align-items: center !important;  /* Upar-neeche se center */
+    width: 100%;                     /* Full width lega */
+}
+
+/* 2. Logo aur Text ko bhi ek line mein rakhne ke liye */
+.navbar-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;  /* Logo aur Gothwad text ke beech thoda gap */
+}
+
+/* 3. Mobile Menu Button (3 Lines) ki position set karna */
+.navbar-toggler {
+    margin-left: auto; /* Ye button ko right side dhakel dega (agar zaroorat padi) */
+    align-self: center;
+}
+
